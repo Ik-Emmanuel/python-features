@@ -1,0 +1,5 @@
+=============== data classes, pydantic, attr 
+- pydantic is used if object validation is important 
+- dataclass feature are tied to the version of python 
+- attrs is a more complex version of dataclass ( its a superset of dataclass)
+    - allows validation 
