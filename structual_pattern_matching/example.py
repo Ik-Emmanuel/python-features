@@ -1,5 +1,7 @@
 """
  Python 3.10 structural pattern matching.
+
+ order of cases matter so order correctly 
 """
 
 import shlex
@@ -83,7 +85,7 @@ def main() -> None:
     while True:
         # command = input("$ ")
         # run_command_v3(command)
-        
+
         # read a command with arguments from the input
         command, *arguments = shlex.split(input("$ "))
 
