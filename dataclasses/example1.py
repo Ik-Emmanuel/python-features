@@ -4,6 +4,7 @@ import random
 import string
 from typing import Iterator
 
+
 @dataclass
 class Account:
     name: str

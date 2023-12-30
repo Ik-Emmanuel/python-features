@@ -4,4 +4,10 @@
 - attrs is a more complex version of dataclass ( its a superset of dataclass)
     - allows validation 
     - better comparison between objects 
+
+
+
+-- classes 
+    - behaviours oriented/driven classes = inheritance or strategy design pattern
+    - data containers  oriented classes = data classes
     
