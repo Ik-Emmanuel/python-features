@@ -3,3 +3,5 @@
 - dataclass feature are tied to the version of python 
 - attrs is a more complex version of dataclass ( its a superset of dataclass)
     - allows validation 
+    - better comparison between objects 
+    
