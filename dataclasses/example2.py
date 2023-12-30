@@ -2,7 +2,7 @@ from dataclasses import dataclass, field
 
 
 # order=True specifies that they can be ordered 
-# frozen=False specifies that the attributes can be changed/updated
+# frozen=False specifies that the attributes can be changed/updated else if True, it means that the data cannot be changed anywhere in the code 
 
 # sort_index: int = field(init=False, repr=False) used to specify sorting, init False = doesn't have to be initialise,
 # repr=False : specifies that it should not be printed when object is printed 
