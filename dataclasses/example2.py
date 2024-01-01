@@ -20,7 +20,6 @@ class Person:
 
     def __post_init__(self):
         # called after the values have been set 
-
         # we can: self.sort_index = self.strength  buut if frozen= true that wont work so instead use object.__setattr__
         object.__setattr__(self, 'sort_index', self.strength)
 

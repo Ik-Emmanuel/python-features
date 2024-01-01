@@ -10,4 +10,20 @@
 -- classes 
     - behaviours oriented/driven classes = inheritance or strategy design pattern
     - data containers  oriented classes = data classes
-    
+
+
+
+-- protocol class vs abstract base class
+    both protocol classes and abstract base classes (ABCs) are mechanisms for defining interfaces or contracts that subclasses must adhere to.
+
+    Differences:
+    - ABCs are classes that cannot be instantiated on their own.
+    - they have abstract methods, which are methods without a body that must be implemented by concrete subclasses.
+
+    - protocol classes: are used in the context of static type checking tools like MyPy. objects that use their contract dont need inheritance
+    - They do not inherit from a common base class like ABCs do, but instead, they are identified by the methods and attributes they define.
+    - more lightweight than ABCs and are often used for specifying interfaces without enforcing a specific class hierarchy.
+
+
+    - ABCs are of norminal typing: meaning. i.e typing must be explicitly written eg with inheritance
+    - protocol classes are of structural typing: i.e type checking involves checking if one object has the same structure (methods) of another object to determine that a given type matches
