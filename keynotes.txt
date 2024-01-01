@@ -13,7 +13,7 @@
 
 
 
--- protocol class vs abstract base class
+-- protocol class vs abstract base class (defining interface needed for an object)
     both protocol classes and abstract base classes (ABCs) are mechanisms for defining interfaces or contracts that subclasses must adhere to.
 
     Differences:
