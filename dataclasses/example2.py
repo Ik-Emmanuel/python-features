@@ -1,5 +1,7 @@
 from dataclasses import dataclass, field
 
+# python 3.10 features
+# kw_only = @dataclass(kw_only=True) forces users to initialise the dataclass using kw arguments by force eg Person(name="name") not Person("name")
 
 # order=True specifies that they can be ordered 
 # frozen=False specifies that the attributes can be changed/updated else if True, it means that the data cannot be changed anywhere in the code 

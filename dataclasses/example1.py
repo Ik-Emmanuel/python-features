@@ -5,11 +5,16 @@ import string
 from typing import Iterator
 
 
+def generate_id() -> str:
+    return "232323"
+
 @dataclass
 class Account:
     name: str
     number: str
     balance: Decimal = Decimal("0")
+    id : str = field(init=False, default_factory=generate_id)
+    search_str: str = field(init=False, repr=False)
 
     def deposit(self, amount: Decimal) -> None:
         self.balance += amount
@@ -18,6 +23,13 @@ class Account:
         if amount > self.balance:
             raise ValueError("Insufficient funds")
         self.balance -= amount
+
+    def __post_init__(self):
+        # called after the values have been set 
+        # object.__setattr__(self, 'search_str', self.name)
+        # or
+        self.search_str = f"{self.name}_{self.number}"
+
 
 @dataclass
 class Bank:

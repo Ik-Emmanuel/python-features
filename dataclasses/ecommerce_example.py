@@ -13,6 +13,9 @@ class OrderStatus(StrEnum):
     CLOSED = auto()
 
 
+def generate_id() -> str:
+    return "232323"
+
 @dataclass
 class Product:
     name: str = field(compare=True)
@@ -20,6 +23,7 @@ class Product:
     shipping_weight: float = field(compare=False)
     unit_price: int = field(compare=False)
     tax_percent: float = field(compare=False)
+    id : str = field(init=False, default_factory=generate_id)
 
     def __post_init__(self) -> None:
         if self.unit_price < 0:
