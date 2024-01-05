@@ -1,4 +1,4 @@
-from functools import cache
+from functools import cache, cached_property
 import time
 
 @cache
@@ -23,3 +23,8 @@ print(a)
 # this one will use the cached version if
 # you calling the function with the same parameters and also the order matters
 print(a)
+
+
+
+# for classes 
+# @cached_property can be use to avoid recomputing properties
