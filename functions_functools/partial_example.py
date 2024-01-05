@@ -1,5 +1,9 @@
 from functools import partial
 
+"""
+partials preload functions and readies them to be called later
+"""
+
 def add_numbers(num:int, second_num: int) -> int:
     return num + second_num
 
